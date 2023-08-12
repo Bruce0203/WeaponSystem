@@ -10,6 +10,7 @@ public class World {
 
     public void addSystem(System<?> system) {
         systems.add(system);
+        system.addToWorld(this);
     }
     private final ArrayList<Entity> entities = new ArrayList<>();
 
